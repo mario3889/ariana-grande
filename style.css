@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+height: 100vh;
+background-image: url('/images/eternal.jpg');
+background-position: center left;
+background-size: cover;
+}
+main{
+    background-color: rgb(42, 26, 13);
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+}
+body{
+    background-color: rgb(42, 26, 13);
+
+}
+header img{
+    height: 80px;
+    margin-bottom: 10px;
+}
+.stream_container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 200px;
+}
+.stream_container p{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    padding: 15px ;
+}
+.navbar{
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 20px;*/
+    position: sticky;
+    top: 0; 
+}
+.navbar .store{
+    display: flex;
+    text-decoration: none;
+    padding: 0 30px;
+    margin: 10px;
+    gap: 18px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.menu-btn{
+    width: 40px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: none;
+
+}
+.navbar li{
+    list-style: none;
+}
+
+.logo{
+    cursor: pointer;
+    text-align: center;
+    flex: 1; 
+}
+.logo img{
+    width: 210px;
+}
+.navbar-content{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 20px 50px; 
+    margin-top: 10px;
+}
+.icons ul{
+    display: flex;
+}
+.icon{
+    
+    padding: 10px;
+    
+}
+.disc-section .disc img{
+    width: 290px;
+}
+.disc-section{
+    display: grid;
+    grid-template-columns: 290px 290px 290px;
+    gap: 17px;
+
+}
+.disc:hover{
+    opacity: 0.3;
+}
+.disc:hover .btn{
+    opacity: 1;
+
+}
+
+.disc{
+   
+}
+.disc:hover .btns{
+    opacity: 1;
+}
+.disc-section .disc h4{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.disc-section .disc p{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+.title{
+    padding: 80px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.buy{
+    display: flex;
+    justify-content: center;
+}
+.tracklist{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 90px;
+    padding: 0 50px;
+    font-weight: bold;
+    
+}
+.tracklist h3{
+    font-size: 4vmin;
+    margin-bottom: 60px;
+}
+.tracklist ul{
+    list-style: none;
+    font-weight: 100;
+    
+}
+.tracklist ul li{
+    padding: 3px 0;
+}
+.singles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.singles-containers{
+    width: 270px;
+    background-color: aliceblue;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    flex-wrap: wrap;
+    transition: .9s ease;
+    &:hover{
+        transform: scale(1.1);
+        z-index: 1;
+
+    }
+}
+
+.singles-containers img{
+    width: 100%;
+    height: auto;
+}
+.singles-content{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    height: 160px;
+
+}
+.singles-content p{
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+}
+#yes-and{
+   background-color: rgb(38, 74, 75);
+}
+#wcbf{
+    background-color: rgb(54, 44, 27);
+}
+#tbim{
+    background-color: rgb(34, 34, 34);
+}
+
+#yes-and p{
+    margin-top: 20px;
+}
+
+#tbim p{
+    margin-top: 20px;
+}
+#tbim .btns{
+    
+}
+.tittle{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-top: 100px;
+}
+
+
+.btns{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 7px;
+    padding: 7px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width:850px) {
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        top: 30%;
+        left: 30px;
+        display: none; 
+    }
+   
+    .navbar-content{
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(42, 26, 13);
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        margin-top: -1300px;
+        transition: all 0.5s ease;
+  
+    }
+    .disc-section{
+        grid-template-columns: repeat(auto-fit, 290px)
+    }
+    .menu-btn{
+        display: block;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .stream_container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .tittle{
+        text-align: center;
+    }
+    .singles{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+        
+    }
+    .stream_container{
+        
+        width: 100%;
+    }
+    .stream_container .text p{
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    p{
+        font-size: 1rem; 
+        padding: 0 10px; 
+    }  
+}
